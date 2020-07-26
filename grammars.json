@@ -1,0 +1,12 @@
+{
+    "SEGMENT":5,
+    "ANGLE":20,
+    "ITERATIONS":5,
+    "AXIOM":"F",
+    "RULES":["F -> F[+F]F[-F][F]"],
+    "COLOR_BACKGROUND":"#9fb456",
+    "COLOR_SEGMENT":"#2b924f",
+    "COLOR_FLOWER":"#D53F95",
+    "START_X":650,
+    "START_Y":550
+}

@@ -1,16 +1,14 @@
 //params
-var SEGMENT = 7
+var SEGMENT = 6
 var ANGLE = 20
 var ITERATIONS = 5
 var AXIOM = "O"
-//var RULES = ["F -> F[+F]F[-F][F]"];
 var isWebglActive = false
-//colors
 
 var COLORS = {
-    COLOR_BACKGROUND: "#9fb4b3",
+    COLOR_BACKGROUND: "#54c9a8",
     COLOR_SEGMENT: "#2b911f",
-    COLOR_FLOWER: "#DD2F95"
+    COLOR_FLOWER: "#ffcb13"
 }
 
 var PARAMS = {
@@ -22,8 +20,8 @@ var START_Y = 200
 
 
 var RULES = {
-  RULE1: "F -> F[+F]F[-F][F]",
-  RULE2: "O -> F[-O]+[-O]+OO"
+  RULE1: "F -> FF",
+  RULE2: "O -> F[+OO]F[-OO]O"
 }
 
 function setup() {
@@ -36,7 +34,7 @@ function setup() {
     else {
       createCanvas(windowWidth, windowHeight);
       START_X = windowWidth/2
-      START_Y = windowHeight*0.7 
+      START_Y = windowHeight*0.9 
     }  
     
 
